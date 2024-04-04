@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign-in Page</title>
+<link rel="stylesheet" href="CSS/index_style.css">
+</head>
+<body>
+<div class="container">
+
+	<header>
+		<h1>Welcome to our Website</h1>
+		<button id="SignupBtn">Sign-Up</button>
+		<button id="loginBtn">Sign-In</button>
+		<button id="AdminBtn">Admin</button>
+		
+	</header>
+<!-- 	Customer-Login-Popup -->
+	<div class="Popup" id="login_Popup">
+		<div class="popup-content">
+        <span class="close" id="closeBtn">&times;</span>
+        <h2>Sign-in</h2>
+        <form action="Sign_in" method="post">
+          <input name="Username" type="text" placeholder="Username" required>
+          <input name="pwd" type="password" placeholder="Password" required>
+          <button type="submit">Login</button>
+        </form>
+        </div>
+	</div>
+<!-- 	Customer-Registration-Popup -->
+	<div class="Popup" id="Signup_Popup">
+		<div class="popup-content">
+        <span class="close" id="closeBtn2">&times;</span>
+        <h2>Sign-in</h2>
+        <form action="User_registration" method="post">
+          <input name="name" type="text" placeholder="Name" required>
+          <input name="add" type="text" placeholder="Address" required>
+          <label class="radio_inline">Gender:
+          <input name="gen" type="radio"  value="M" required>Male<input name="gen" type="radio"  value="F" required>Female
+          </label>
+          <input name="password" type="password" placeholder="Password" required>
+          <button type="submit">Submit</button>
+        </form>
+        </div>
+	</div>
+<!-- 	Admin-Login-Popup -->
+	<div class="Popup" id="Adminlogin_Popup">
+		<div class="popup-content">
+        <span class="close" id="admin_closeBtn">&times;</span>
+        <h2>Sign-in</h2>
+        <form action="Admin_login" method="post">
+          <input name="shopkeeper_name" type="text" placeholder="Username" required>
+          <input name="admin_pwd" type="password" placeholder="Password" required>
+          <button type="submit">Login</button>
+        </form>
+        </div>
+	</div>
+</div>
+<script src="JS/index_script.js"></script>
+
+
+
+
+ 
+ 
+ </body>
+</html>
